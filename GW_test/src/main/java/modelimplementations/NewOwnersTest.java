@@ -1,6 +1,6 @@
 package modelimplementations;
 
-import interfacesPetClinic.NewOwner;
+import interfaces.NewOwner;
 import org.graphwalker.core.machine.ExecutionContext;
 import org.graphwalker.java.annotation.GraphWalker;
 
