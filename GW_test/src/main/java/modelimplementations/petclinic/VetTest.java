@@ -1,10 +1,10 @@
-package modelimplementations;
+package modelimplementations.petclinic;
 
-import interfaces.Veterinarians;
+import PetClinic.*;
 import org.graphwalker.core.machine.ExecutionContext;
 import org.graphwalker.java.annotation.GraphWalker;
 
-@GraphWalker(value = "random(edge_coverage(100))")
+//@GraphWalker(value = "random(edge_coverage(100))")
 public class VetTest extends ExecutionContext implements Veterinarians {
     @Override
     public void e_Search() {

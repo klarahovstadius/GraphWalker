@@ -21,10 +21,7 @@
                 <executions>
                     <execution>
                         <id>generate-sources</id>
-                        <phase>generate-sources</phase>
-                        <goals>
-                            <goal>generate-sources</goal>
-                        </goals>
+                        <phase>compile</phase>
                     </execution>
                 </executions>
             </plugin>
@@ -32,6 +29,11 @@
     </build>
 
     <dependencies>
+        <dependency>
+            <groupId>org.graphwalker</groupId>
+            <artifactId>graphwalker-websocket</artifactId>
+            <version>4.3.0</version>
+        </dependency>
         <dependency>
             <groupId>org.graphwalker</groupId>
             <artifactId>graphwalker-core</artifactId>

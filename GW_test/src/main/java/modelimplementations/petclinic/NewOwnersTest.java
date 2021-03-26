@@ -1,10 +1,10 @@
-package modelimplementations;
+package modelimplementations.petclinic;
 
-import interfaces.NewOwner;
+import PetClinic.*;
 import org.graphwalker.core.machine.ExecutionContext;
 import org.graphwalker.java.annotation.GraphWalker;
 
-@GraphWalker(value = "random(edge_coverage(100))")
+//@GraphWalker(value = "random(edge_coverage(100))")
 public class NewOwnersTest extends ExecutionContext implements NewOwner {
 
     @Override

@@ -12,6 +12,13 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.graphwalker:graphwalker-websocket:4.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.graphwalker:graphwalker-io:4.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans:3.1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.json:json:20200518" level="project" />
+    <orderEntry type="library" name="Maven: org.graphwalker:graphwalker-model-checker:4.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.java-websocket:Java-WebSocket:1.5.1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.26" level="project" />
     <orderEntry type="library" name="Maven: org.graphwalker:graphwalker-core:4.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.graalvm.sdk:graal-sdk:20.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.graalvm.js:js:20.2.0" level="project" />
@@ -24,13 +31,9 @@
     <orderEntry type="library" name="Maven: com.ibm.icu:icu4j:67.1" level="project" />
     <orderEntry type="library" name="Maven: org.graalvm.js:js-scriptengine:20.2.0" level="project" />
     <orderEntry type="library" name="Maven: org.graalvm.truffle:truffle-api:20.2.0" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.26" level="project" />
     <orderEntry type="library" name="Maven: org.graphwalker:graphwalker-java:4.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.graphwalker:graphwalker-dsl:4.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.antlr:antlr4-runtime:4.8-1" level="project" />
-    <orderEntry type="library" name="Maven: org.graphwalker:graphwalker-io:4.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.xmlbeans:xmlbeans:3.1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.json:json:20200518" level="project" />
     <orderEntry type="library" name="Maven: org.reflections:reflections:0.9.12" level="project" />
     <orderEntry type="library" name="Maven: com.google.code.javaparser:javaparser:1.0.11" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:2.8.0" level="project" />
@@ -41,9 +44,6 @@
     <orderEntry type="library" name="Maven: com.sun.xml.bind:jaxb-impl:2.3.1" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.27.0-GA" level="project" />
     <orderEntry type="library" name="Maven: org.graphwalker:graphwalker-studio:4.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.graphwalker:graphwalker-websocket:4.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.graphwalker:graphwalker-model-checker:4.3.0" level="project" />
-    <orderEntry type="library" name="Maven: org.java-websocket:Java-WebSocket:1.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.3.3.RELEASE" level="project" />
