@@ -1,0 +1,401 @@
+{
+  "models": [
+    {
+      "name": "Untitled2",
+      "id": "3567ebb0-70fa-11eb-b2f2-cb3566ac3078",
+      "generator": "a_star(reached_vertex(v_NewVertex4))",
+      "vertices": [
+        {
+          "id": "368a4ba0-70fa-11eb-b2f2-cb3566ac3078",
+          "name": "v_NewVertex3",
+          "properties": {
+            "x": 146,
+            "y": 202
+          },
+          "sharedState": "hej"
+        },
+        {
+          "id": "3899a3a0-70fa-11eb-b2f2-cb3566ac3078",
+          "name": "v_NewVertex4",
+          "properties": {
+            "x": 477,
+            "y": 202
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "3bddf930-70fa-11eb-b2f2-cb3566ac3078",
+          "name": "e_NewEdge6",
+          "sourceVertexId": "3899a3a0-70fa-11eb-b2f2-cb3566ac3078",
+          "targetVertexId": "368a4ba0-70fa-11eb-b2f2-cb3566ac3078"
+        },
+        {
+          "id": "3c45bbb0-70fa-11eb-b2f2-cb3566ac3078",
+          "name": "e_NewEdge5",
+          "sourceVertexId": "368a4ba0-70fa-11eb-b2f2-cb3566ac3078",
+          "targetVertexId": "3899a3a0-70fa-11eb-b2f2-cb3566ac3078"
+        }
+      ],
+      "editor": {
+        "elements": {
+          "nodes": [
+            {
+              "data": {
+                "id": "3899a3a0-70fa-11eb-b2f2-cb3566ac3078",
+                "name": "v_NewVertex4",
+                "color": "LightSteelBlue"
+              },
+              "position": {
+                "x": 477,
+                "y": 202
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "368a4ba0-70fa-11eb-b2f2-cb3566ac3078",
+                "name": "v_NewVertex3",
+                "color": "LightSalmon",
+                "sharedState": "hej"
+              },
+              "position": {
+                "x": 146,
+                "y": 202
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            }
+          ],
+          "edges": [
+            {
+              "data": {
+                "id": "3bddf930-70fa-11eb-b2f2-cb3566ac3078",
+                "name": "e_NewEdge6",
+                "source": "3899a3a0-70fa-11eb-b2f2-cb3566ac3078",
+                "target": "368a4ba0-70fa-11eb-b2f2-cb3566ac3078",
+                "color": "LightSteelBlue"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "3c45bbb0-70fa-11eb-b2f2-cb3566ac3078",
+                "name": "e_NewEdge5",
+                "source": "368a4ba0-70fa-11eb-b2f2-cb3566ac3078",
+                "target": "3899a3a0-70fa-11eb-b2f2-cb3566ac3078",
+                "color": "LightSteelBlue"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            }
+          ]
+        },
+        "style": [
+          {
+            "selector": "core",
+            "style": {
+              "active-bg-size": "0px"
+            }
+          },
+          {
+            "selector": "node",
+            "style": {
+              "label": "data(name)",
+              "text-wrap": "wrap",
+              "text-valign": "center",
+              "text-halign": "center",
+              "shape": "roundrectangle",
+              "width": "label",
+              "height": "label",
+              "color": "rgb(0,0,0)",
+              "background-color": "data(color)",
+              "line-color": "data(color)",
+              "padding": "10px"
+            }
+          },
+          {
+            "selector": "edge",
+            "style": {
+              "label": "data(name)",
+              "text-wrap": "wrap",
+              "curve-style": "bezier",
+              "text-rotation": "autorotate",
+              "target-arrow-shape": "triangle",
+              "width": "4px",
+              "line-color": "data(color)",
+              "target-arrow-color": "data(color)",
+              "background-color": "data(color)"
+            }
+          },
+          {
+            "selector": ":loop",
+            "style": {
+              "curve-style": "unbundled-bezier",
+              "control-point-step-size": "60px"
+            }
+          },
+          {
+            "selector": ":selected",
+            "style": {
+              "border-width": "4px",
+              "border-color": "rgb(0,0,0)",
+              "line-color": "rgb(0,0,0)",
+              "target-arrow-color": "rgb(0,0,0)"
+            }
+          }
+        ],
+        "data": {},
+        "zoomingEnabled": true,
+        "userZoomingEnabled": true,
+        "zoom": 1,
+        "minZoom": 1e-50,
+        "maxZoom": 1e+50,
+        "panningEnabled": true,
+        "userPanningEnabled": true,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "boxSelectionEnabled": true,
+        "renderer": {
+          "name": "canvas"
+        }
+      }
+    },
+    {
+      "edges": [
+        {
+          "id": "2f6d76d0-70fa-11eb-b2f2-cb3566ac3078",
+          "name": "e_NewEdge",
+          "sourceVertexId": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078",
+          "targetVertexId": "2eb634c0-70fa-11eb-b2f2-cb3566ac3078"
+        },
+        {
+          "id": "32c02440-70fa-11eb-b2f2-cb3566ac3078",
+          "name": "e_NewEdge2",
+          "sourceVertexId": "2eb634c0-70fa-11eb-b2f2-cb3566ac3078",
+          "targetVertexId": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078"
+        }
+      ],
+      "name": "Untitled1",
+      "id": "2c130130-70fa-11eb-b2f2-cb3566ac3078",
+      "generator": "random(edge_coverage(100))",
+      "startElementId": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078",
+      "vertices": [
+        {
+          "id": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078",
+          "name": "v_NewVertex",
+          "properties": {
+            "x": 376,
+            "y": 233
+          },
+          "sharedState": "hej"
+        },
+        {
+          "id": "2eb634c0-70fa-11eb-b2f2-cb3566ac3078",
+          "name": "v_NewVertex2",
+          "properties": {
+            "x": 646,
+            "y": 248
+          }
+        }
+      ],
+      "editor": {
+        "elements": {
+          "nodes": [
+            {
+              "data": {
+                "id": "2eb634c0-70fa-11eb-b2f2-cb3566ac3078",
+                "name": "v_NewVertex2",
+                "color": "LightGreen"
+              },
+              "position": {
+                "x": 646,
+                "y": 248
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078",
+                "name": "v_NewVertex",
+                "color": "LightGreen",
+                "sharedState": "hej"
+              },
+              "position": {
+                "x": 376,
+                "y": 233
+              },
+              "group": "nodes",
+              "removed": false,
+              "selected": true,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": false,
+              "classes": ""
+            }
+          ],
+          "edges": [
+            {
+              "data": {
+                "id": "2f6d76d0-70fa-11eb-b2f2-cb3566ac3078",
+                "name": "e_NewEdge",
+                "source": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078",
+                "target": "2eb634c0-70fa-11eb-b2f2-cb3566ac3078",
+                "color": "LightGreen"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            },
+            {
+              "data": {
+                "id": "32c02440-70fa-11eb-b2f2-cb3566ac3078",
+                "name": "e_NewEdge2",
+                "source": "2eb634c0-70fa-11eb-b2f2-cb3566ac3078",
+                "target": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078",
+                "color": "LightGreen"
+              },
+              "position": {
+                "x": 0,
+                "y": 0
+              },
+              "group": "edges",
+              "removed": false,
+              "selected": false,
+              "selectable": true,
+              "locked": false,
+              "grabbable": true,
+              "pannable": true,
+              "classes": ""
+            }
+          ]
+        },
+        "style": [
+          {
+            "selector": "core",
+            "style": {
+              "active-bg-size": "0px"
+            }
+          },
+          {
+            "selector": "node",
+            "style": {
+              "label": "data(name)",
+              "text-wrap": "wrap",
+              "text-valign": "center",
+              "text-halign": "center",
+              "shape": "roundrectangle",
+              "width": "label",
+              "height": "label",
+              "color": "rgb(0,0,0)",
+              "background-color": "data(color)",
+              "line-color": "data(color)",
+              "padding": "10px"
+            }
+          },
+          {
+            "selector": "edge",
+            "style": {
+              "label": "data(name)",
+              "text-wrap": "wrap",
+              "curve-style": "bezier",
+              "text-rotation": "autorotate",
+              "target-arrow-shape": "triangle",
+              "width": "4px",
+              "line-color": "data(color)",
+              "target-arrow-color": "data(color)",
+              "background-color": "data(color)"
+            }
+          },
+          {
+            "selector": ":loop",
+            "style": {
+              "curve-style": "unbundled-bezier",
+              "control-point-step-size": "60px"
+            }
+          },
+          {
+            "selector": ":selected",
+            "style": {
+              "border-width": "4px",
+              "border-color": "rgb(0,0,0)",
+              "line-color": "rgb(0,0,0)",
+              "target-arrow-color": "rgb(0,0,0)"
+            }
+          }
+        ],
+        "data": {},
+        "zoomingEnabled": true,
+        "userZoomingEnabled": true,
+        "zoom": 1,
+        "minZoom": 1e-50,
+        "maxZoom": 1e+50,
+        "panningEnabled": true,
+        "userPanningEnabled": true,
+        "pan": {
+          "x": 0,
+          "y": 0
+        },
+        "boxSelectionEnabled": true,
+        "renderer": {
+          "name": "canvas"
+        }
+      }
+    }
+  ],
+  "selectedModelIndex": 1,
+  "selectedElementId": null
+}
