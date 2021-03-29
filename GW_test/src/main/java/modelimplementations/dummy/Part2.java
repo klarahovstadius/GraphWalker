@@ -5,7 +5,6 @@ import org.graphwalker.java.annotation.GraphWalker;
 import dummy.Untitled2;
 
 @GraphWalker
-//@GraphWalker(value = "a_star(reached_vertex(v_NewVertex4))")
 public class Part2 extends ExecutionContext implements Untitled2 {
     @Override
     public void v_NewVertex3() {
