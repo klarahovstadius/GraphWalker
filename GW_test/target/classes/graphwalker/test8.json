@@ -6,35 +6,35 @@
       "generator": "a_star(reached_vertex(v_NewVertex4))",
       "vertices": [
         {
-          "id": "368a4ba0-70fa-11eb-b2f2-cb3566ac3078",
+          "id": "f1b090a0-91e9-11eb-8103-03f20c0a6dd5",
           "name": "v_NewVertex3",
           "properties": {
-            "x": 146,
-            "y": 202
+            "x": 181,
+            "y": 383
           },
-          "sharedState": "hej"
+          "sharedState": "shared"
         },
         {
-          "id": "3899a3a0-70fa-11eb-b2f2-cb3566ac3078",
+          "id": "f4802b60-91e9-11eb-8103-03f20c0a6dd5",
           "name": "v_NewVertex4",
           "properties": {
-            "x": 477,
-            "y": 202
+            "x": 445,
+            "y": 384
           }
         }
       ],
       "edges": [
         {
-          "id": "3bddf930-70fa-11eb-b2f2-cb3566ac3078",
-          "name": "e_NewEdge6",
-          "sourceVertexId": "3899a3a0-70fa-11eb-b2f2-cb3566ac3078",
-          "targetVertexId": "368a4ba0-70fa-11eb-b2f2-cb3566ac3078"
+          "id": "f9e3b770-91e9-11eb-8103-03f20c0a6dd5",
+          "name": "e_NewEdge5",
+          "sourceVertexId": "f1b090a0-91e9-11eb-8103-03f20c0a6dd5",
+          "targetVertexId": "f4802b60-91e9-11eb-8103-03f20c0a6dd5"
         },
         {
-          "id": "3c45bbb0-70fa-11eb-b2f2-cb3566ac3078",
-          "name": "e_NewEdge5",
-          "sourceVertexId": "368a4ba0-70fa-11eb-b2f2-cb3566ac3078",
-          "targetVertexId": "3899a3a0-70fa-11eb-b2f2-cb3566ac3078"
+          "id": "ffa87650-91e9-11eb-8103-03f20c0a6dd5",
+          "name": "e_NewEdge6",
+          "sourceVertexId": "f4802b60-91e9-11eb-8103-03f20c0a6dd5",
+          "targetVertexId": "f1b090a0-91e9-11eb-8103-03f20c0a6dd5"
         }
       ],
       "editor": {
@@ -42,13 +42,13 @@
           "nodes": [
             {
               "data": {
-                "id": "3899a3a0-70fa-11eb-b2f2-cb3566ac3078",
+                "id": "f4802b60-91e9-11eb-8103-03f20c0a6dd5",
                 "name": "v_NewVertex4",
                 "color": "LightSteelBlue"
               },
               "position": {
-                "x": 477,
-                "y": 202
+                "x": 445,
+                "y": 384
               },
               "group": "nodes",
               "removed": false,
@@ -61,14 +61,14 @@
             },
             {
               "data": {
-                "id": "368a4ba0-70fa-11eb-b2f2-cb3566ac3078",
+                "id": "f1b090a0-91e9-11eb-8103-03f20c0a6dd5",
                 "name": "v_NewVertex3",
                 "color": "LightSalmon",
-                "sharedState": "hej"
+                "sharedState": "shared"
               },
               "position": {
-                "x": 146,
-                "y": 202
+                "x": 181,
+                "y": 383
               },
               "group": "nodes",
               "removed": false,
@@ -83,10 +83,10 @@
           "edges": [
             {
               "data": {
-                "id": "3bddf930-70fa-11eb-b2f2-cb3566ac3078",
-                "name": "e_NewEdge6",
-                "source": "3899a3a0-70fa-11eb-b2f2-cb3566ac3078",
-                "target": "368a4ba0-70fa-11eb-b2f2-cb3566ac3078",
+                "id": "f9e3b770-91e9-11eb-8103-03f20c0a6dd5",
+                "name": "e_NewEdge5",
+                "source": "f1b090a0-91e9-11eb-8103-03f20c0a6dd5",
+                "target": "f4802b60-91e9-11eb-8103-03f20c0a6dd5",
                 "color": "LightSteelBlue"
               },
               "position": {
@@ -104,10 +104,10 @@
             },
             {
               "data": {
-                "id": "3c45bbb0-70fa-11eb-b2f2-cb3566ac3078",
-                "name": "e_NewEdge5",
-                "source": "368a4ba0-70fa-11eb-b2f2-cb3566ac3078",
-                "target": "3899a3a0-70fa-11eb-b2f2-cb3566ac3078",
+                "id": "ffa87650-91e9-11eb-8103-03f20c0a6dd5",
+                "name": "e_NewEdge6",
+                "source": "f4802b60-91e9-11eb-8103-03f20c0a6dd5",
+                "target": "f1b090a0-91e9-11eb-8103-03f20c0a6dd5",
                 "color": "LightSteelBlue"
               },
               "position": {
@@ -195,44 +195,45 @@
         "renderer": {
           "name": "canvas"
         }
-      }
+      },
+      "startElementId": "d4ebc200-91e9-11eb-8103-03f20c0a6dd5"
     },
     {
       "edges": [
         {
-          "id": "2f6d76d0-70fa-11eb-b2f2-cb3566ac3078",
+          "id": "e1c147c0-91e9-11eb-8103-03f20c0a6dd5",
           "name": "e_NewEdge",
-          "sourceVertexId": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078",
-          "targetVertexId": "2eb634c0-70fa-11eb-b2f2-cb3566ac3078"
+          "sourceVertexId": "d4ebc200-91e9-11eb-8103-03f20c0a6dd5",
+          "targetVertexId": "dc36d2c0-91e9-11eb-8103-03f20c0a6dd5"
         },
         {
-          "id": "32c02440-70fa-11eb-b2f2-cb3566ac3078",
+          "id": "e4db8010-91e9-11eb-8103-03f20c0a6dd5",
           "name": "e_NewEdge2",
-          "sourceVertexId": "2eb634c0-70fa-11eb-b2f2-cb3566ac3078",
-          "targetVertexId": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078"
+          "sourceVertexId": "dc36d2c0-91e9-11eb-8103-03f20c0a6dd5",
+          "targetVertexId": "d4ebc200-91e9-11eb-8103-03f20c0a6dd5"
         }
       ],
       "name": "Untitled1",
       "id": "2c130130-70fa-11eb-b2f2-cb3566ac3078",
       "generator": "random(edge_coverage(100))",
-      "startElementId": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078",
+      "startElementId": "d4ebc200-91e9-11eb-8103-03f20c0a6dd5",
       "vertices": [
         {
-          "id": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078",
+          "id": "d4ebc200-91e9-11eb-8103-03f20c0a6dd5",
           "name": "v_NewVertex",
           "properties": {
-            "x": 376,
-            "y": 233
-          },
-          "sharedState": "hej"
+            "x": 253,
+            "y": 388
+          }
         },
         {
-          "id": "2eb634c0-70fa-11eb-b2f2-cb3566ac3078",
+          "id": "dc36d2c0-91e9-11eb-8103-03f20c0a6dd5",
           "name": "v_NewVertex2",
           "properties": {
-            "x": 646,
-            "y": 248
-          }
+            "x": 582,
+            "y": 385
+          },
+          "sharedState": "shared"
         }
       ],
       "editor": {
@@ -240,17 +241,18 @@
           "nodes": [
             {
               "data": {
-                "id": "2eb634c0-70fa-11eb-b2f2-cb3566ac3078",
+                "id": "dc36d2c0-91e9-11eb-8103-03f20c0a6dd5",
                 "name": "v_NewVertex2",
-                "color": "LightGreen"
+                "color": "LightGreen",
+                "sharedState": "shared"
               },
               "position": {
-                "x": 646,
-                "y": 248
+                "x": 582,
+                "y": 385
               },
               "group": "nodes",
               "removed": false,
-              "selected": false,
+              "selected": true,
               "selectable": true,
               "locked": false,
               "grabbable": true,
@@ -259,18 +261,17 @@
             },
             {
               "data": {
-                "id": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078",
+                "id": "d4ebc200-91e9-11eb-8103-03f20c0a6dd5",
                 "name": "v_NewVertex",
-                "color": "LightGreen",
-                "sharedState": "hej"
+                "color": "LightGreen"
               },
               "position": {
-                "x": 376,
-                "y": 233
+                "x": 253,
+                "y": 388
               },
               "group": "nodes",
               "removed": false,
-              "selected": true,
+              "selected": false,
               "selectable": true,
               "locked": false,
               "grabbable": true,
@@ -281,10 +282,10 @@
           "edges": [
             {
               "data": {
-                "id": "2f6d76d0-70fa-11eb-b2f2-cb3566ac3078",
+                "id": "e1c147c0-91e9-11eb-8103-03f20c0a6dd5",
                 "name": "e_NewEdge",
-                "source": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078",
-                "target": "2eb634c0-70fa-11eb-b2f2-cb3566ac3078",
+                "source": "d4ebc200-91e9-11eb-8103-03f20c0a6dd5",
+                "target": "dc36d2c0-91e9-11eb-8103-03f20c0a6dd5",
                 "color": "LightGreen"
               },
               "position": {
@@ -302,10 +303,10 @@
             },
             {
               "data": {
-                "id": "32c02440-70fa-11eb-b2f2-cb3566ac3078",
+                "id": "e4db8010-91e9-11eb-8103-03f20c0a6dd5",
                 "name": "e_NewEdge2",
-                "source": "2eb634c0-70fa-11eb-b2f2-cb3566ac3078",
-                "target": "2e0dbfc0-70fa-11eb-b2f2-cb3566ac3078",
+                "source": "dc36d2c0-91e9-11eb-8103-03f20c0a6dd5",
+                "target": "d4ebc200-91e9-11eb-8103-03f20c0a6dd5",
                 "color": "LightGreen"
               },
               "position": {
@@ -396,6 +397,6 @@
       }
     }
   ],
-  "selectedModelIndex": 1,
-  "selectedElementId": null
+  "selectedModelIndex": 0,
+  "selectedElementId": "f4802b60-91e9-11eb-8103-03f20c0a6dd5"
 }

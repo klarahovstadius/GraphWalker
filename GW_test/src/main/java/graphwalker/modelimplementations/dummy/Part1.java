@@ -1,8 +1,8 @@
-package modelimplementations.dummy;
+package graphwalker.modelimplementations.dummy;
 
 import org.graphwalker.core.machine.ExecutionContext;
 import org.graphwalker.java.annotation.GraphWalker;
-import dummy.Untitled1;
+import graphwalker.Untitled1;
 
 @GraphWalker
 public class Part1 extends ExecutionContext implements Untitled1 {

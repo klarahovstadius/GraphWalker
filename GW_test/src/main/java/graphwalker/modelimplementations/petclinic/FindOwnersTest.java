@@ -1,8 +1,7 @@
-package modelimplementations.petclinic;
+package graphwalker.modelimplementations.petclinic;
 
 import PetClinic.*;
 import org.graphwalker.core.machine.ExecutionContext;
-import org.graphwalker.java.annotation.GraphWalker;
 
 //@GraphWalker(value = "random(edge_coverage(100))")
 public class FindOwnersTest extends ExecutionContext implements FindOwners {
