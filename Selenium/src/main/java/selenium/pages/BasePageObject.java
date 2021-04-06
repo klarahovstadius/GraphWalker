@@ -5,7 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * Forth class to create/when the other base classes are done
@@ -39,6 +40,8 @@ public class BasePageObject {
         log.info("Found the element from locator " + locator);
     }
     public WebElement findElementReturnElement(By locator) {
+        WebDriverWait wait = new WebDriverWait(driver, 3);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         WebElement element = driver.findElement(locator);
         log.info("Found the element from locator " + locator);
         return element;
@@ -62,6 +65,8 @@ public class BasePageObject {
      * Click on element
      */
     public void clickElement(By locator) {
+        WebDriverWait waitForLocator = new WebDriverWait(driver, 5);
+        waitForLocator.until(ExpectedConditions.elementToBeClickable(locator));
         driver.findElement(locator).click();
     }
 

@@ -38,8 +38,8 @@ public class BaseTest {
     @AfterMethod(alwaysRun = true)
     public void tearDown(){
         if (driver!=null) {
-            //driver.quit();
-            //log.info("Closed driver in the after method");
+            driver.quit();
+            log.info("Closed driver in the after method");
         }
     }
 }
