@@ -4,7 +4,6 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 
 /**
  * A page
@@ -41,17 +40,11 @@ public class GoogleStartPage extends BasePageObject {
 
     /**
      * Execute search
+     * Here we wanna be passed on to the next page
      */
-    public void clickSearch() throws InterruptedException {
+    public GoogleResultPage clickSearch() throws InterruptedException {
         Thread.sleep(2000);
-        //Here we wanna be passed on to the next page TODO
         sendKeys(searchInputBox, Keys.ENTER);
-    }
-
-    /**
-     * Verify the number of results
-     */
-    public void verifyResult() {
-        //TODO
+        return new GoogleResultPage(driver, log);
     }
 }

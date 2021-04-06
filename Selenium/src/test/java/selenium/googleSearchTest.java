@@ -2,9 +2,12 @@ package selenium;
 
 import org.testng.annotations.Test;
 import selenium.base.TestUtilities;
+import selenium.pages.GoogleResultPage;
 import selenium.pages.GoogleStartPage;
 
 public class googleSearchTest extends TestUtilities {
+
+    private String expectedResults = "9260";
 
     @Test
     public void searchTest() throws InterruptedException {
@@ -19,9 +22,10 @@ public class googleSearchTest extends TestUtilities {
         googleStartPage.searchGoogle();
 
         /** Execute search*/
-        googleStartPage.clickSearch();
+        GoogleResultPage googleResultPage = googleStartPage.clickSearch();
 
         /** Verify the number of results*/
-
+        googleResultPage.verifyResult(expectedResults);
+        takeScreenshot("Result");
     }
 }

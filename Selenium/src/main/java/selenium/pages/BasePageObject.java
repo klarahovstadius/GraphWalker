@@ -5,8 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import java.awt.*;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Forth class to create/when the other base classes are done
@@ -39,10 +38,10 @@ public class BasePageObject {
         driver.findElement(locator);
         log.info("Found the element from locator " + locator);
     }
-    public WebElement findIFrame(By locator) {
-        WebElement iframe = driver.findElement(locator);
-        log.info("Found the iframe from locator " + locator);
-        return iframe;
+    public WebElement findElementReturnElement(By locator) {
+        WebElement element = driver.findElement(locator);
+        log.info("Found the element from locator " + locator);
+        return element;
     }
 
     /**
@@ -67,7 +66,7 @@ public class BasePageObject {
     }
 
     /**
-     * Switch iframe window either with iframe name or number (index 0)
+     * Switch frame/iframe window either with iframe name or number (index 0)
      */
     public void switchWindow(WebElement frame) {
         driver.switchTo().frame(frame);
@@ -80,6 +79,4 @@ public class BasePageObject {
     public void switchToParent() {
         driver.switchTo().parentFrame();
     }
-
-
 }
