@@ -11,6 +11,8 @@
     <modules>
         <module>GW_test</module>
         <module>Selenium</module>
+        <module>Neo4j</module>
+        <module>Jersey</module>
     </modules>
 
 
