@@ -5,14 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>example</groupId>
-    <artifactId>GraphWalker</artifactId>
+    <artifactId>MyProject</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>GW_test</module>
+        <module>GW</module>
         <module>Selenium</module>
-        <module>Neo4j</module>
-        <module>Jersey</module>
+        <module>Spring</module>
     </modules>
 
 
