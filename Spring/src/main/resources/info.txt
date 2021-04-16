@@ -1,0 +1,11 @@
+@SpringBootApplication = the "run class". When we start it, all get/post/etc methods in the class gets which has the @RestControlle annotation
+are active and called when a user enters a specific URI into the browser
+@RestController = rest service/request handler. This is what will be active/run via the "run class".
+@Component =  for choosing the class to include
+@Autowired = used to create an instance of a class (a bean)
+@GetMapping/@PostMapping = used to get and post values to a specified path
+
+--Classes--
+UserDaoService: will be a bean for the controller class. Contains calculation methods.
+User: structure of a user.
+UserController: methods accessed when a user enters a URI in the browser.

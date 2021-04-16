@@ -1,0 +1,20 @@
+Import the GraphWalker JSON file to your project, to folder src/main/resources
+Run graphwalker:generate-sources (can be found in the Maven panel to the right in IntelliJ)–> an interface will be generated. This interface is like an empty shell which we will use in the coding part later on. Don't store the interface anywhere, just it be re-generated every time you run the tests.
+Create a new java class. add "extends ExecutionContext implements <name of interface>", hover over the red line and click on "implement methods"
+Before the class, add the Graphwalker annotation "@Graphwalker(value...)". If you have several linked modules, add a start element in the start module. The other modules should just have "value(...)".
+
+GW Player
+Save an html file with the following file to your computer: index.html
+Go to either of these sites:
+<Path to the file>/index.html?wsURI=localhost:8887
+C:/Users/khovstadius/IdeaProjects/index.html?wsURI=localhost:8887
+Run GW studio, then go to
+http://localhost:9090/?location=ws://localhost:8887
+Click on the icon to the right and then on Connect.
+
+Run the WebSocketApplication class to start the test.
+
+I noticed that if you name your vertex with a long name, the edges will disappear from the view in GraphWalker studio. So, if an edge disappear, shorten the name of its associated vertex.
+Working with multiple models in the studio: actions cannot be used across these. So if you use variables with the same names in different modules, they will only work/be stored in their specific module.
+It seems like you cannot use multiple shared names for one vertex. Might be possible to have global variables when using yEd.
+Taking the same path every time is actually possible.
