@@ -1,10 +1,9 @@
-package springcourse.user;
+package springcourse.examplewithcomments;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.hateoas.EntityModel;
-import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
+
 import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.methodOn;
+
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -15,6 +14,7 @@ import java.util.List;
 
 /**
  * @RestController --> will run this class when running the application
+ * * This class is run via the class "AccessingTomcat"
  * We will create and retrieve users (etc), with the help of the UserDoeService class
  */
 @RestController
@@ -28,11 +28,17 @@ public class UserController {
         return service.findAll();
     }
 
-    @GetMapping(path = "/users/{id}") //get a specific user. It's the id I enter in the browser that will be passed to this method.
+    @GetMapping(path = "/hello-world")
+    public String helloWorld() {
+        return "Hello this is Klara";
+    }
+
+    @GetMapping(path = "/users/{id}")
+    //get a specific user. It's the id I enter in the browser that will be passed to this method.
     public User retrieveUser(@PathVariable int id) {
         User user = service.findOne(id);
-        if(user==null)
-            throw  new UserNotFoundException("id-"+id+" not found"); //without this, it will return 200 OK even if the user doesn't exist
+        if (user == null)
+            throw new UserNotFoundException("id-" + id + " not found"); //without this, it will return 200 OK even if the user doesn't exist
         return user;
     }
 

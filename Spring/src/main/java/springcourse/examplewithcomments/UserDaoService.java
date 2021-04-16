@@ -1,4 +1,4 @@
-package springcourse.user;
+package springcourse.examplewithcomments;
 
 import org.springframework.stereotype.Component;
 
@@ -11,13 +11,11 @@ import java.util.List;
 public class UserDaoService {
     private static List<User> users = new ArrayList<>();
     private static int usersCount = 3;
-    private static List<UserPost> posts = new ArrayList<>();
 
     static {
         users.add(new User(1, "Adam", new Date()));
         users.add(new User(2, "Eve", new Date()));
         users.add(new User(3, "Jack", new Date()));
-        posts.add(new UserPost("comment", new Date()));
     }
 
     public List<User> findAll() {
@@ -30,7 +28,7 @@ public class UserDaoService {
     public User save(User user) { //Call this to add a new user to the list "users"
         if (user.getId() == null) {
             //When send in name and birthdate via Postman, so here we will just need to define the id
-            user.setId(++usersCount); //the next available id
+            user.setId(++usersCount); //the next available id, I think it also increases the usersCount variable
         }
         users.add(user);
         return user;

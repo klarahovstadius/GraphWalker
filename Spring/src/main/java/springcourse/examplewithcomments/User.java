@@ -1,4 +1,4 @@
-package springcourse.user;
+package springcourse.examplewithcomments;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -19,7 +19,7 @@ public class User {
     @ApiModelProperty(notes="The date must be in the past")
     private Date birthDate;
 
-    protected User(){ //default no-argument constructor (if we need to call the User method without sending in id, name, birthdate
+    protected User(){ //default no-argument constructor (if we need to call the User method without sending in name, birthdate
         //this is needed when sending a post request via e.g. Postman to create a new user
     }
 
