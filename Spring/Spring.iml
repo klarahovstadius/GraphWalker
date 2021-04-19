@@ -136,7 +136,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.hk2:hk2-utils:2.6.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.jersey.containers:jersey-container-servlet:2.32" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.glassfish.jersey.containers:jersey-container-servlet-core:2.32" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: commons-io:commons-io:2.7" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.11.3" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.11.3" level="project" />
@@ -149,7 +148,7 @@
     <orderEntry type="library" name="Maven: com.sun.istack:istack-commons-runtime:3.0.8" level="project" />
     <orderEntry type="library" name="Maven: org.jvnet.staxex:stax-ex:1.8.1" level="project" />
     <orderEntry type="library" name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.16" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: commons-codec:commons-codec:1.14" level="project" />
+    <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.14" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.neo4j:neo4j-kernel:4.2.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.neo4j:neo4j-native:4.2.2" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: net.java.dev.jna:jna:5.6.0" level="project" />
@@ -189,6 +188,9 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.3.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.3.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.4.6" level="project" />
+    <orderEntry type="library" name="Maven: org.neo4j:neo4j-ogm-bolt-driver:2.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.neo4j:neo4j-ogm-api:2.1.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-io:commons-io:2.4" level="project" />
     <orderEntry type="library" name="Maven: javax.xml.bind:jaxb-api:2.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-rest:2.4.4" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-rest-webmvc:3.4.6" level="project" />

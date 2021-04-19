@@ -12,6 +12,7 @@
         <module>GW</module>
         <module>Selenium</module>
         <module>Spring</module>
+        <module>Neo4j</module>
     </modules>
 
 

@@ -13,15 +13,19 @@ import java.net.URI;
 import java.util.List;
 
 /**
+ * Spring boot is used as a framework for creating microservices/applications
+ * With Spring we don't need try/catch
  * @RestController --> will run this class when running the application
- * * This class is run via the class "AccessingTomcat"
+ * This class is run via the class "AccessingTomcat"
  * We will create and retrieve users (etc), with the help of the UserDoeService class
+ * The config is set to build the project automatically, but otherwise click Ctrl+F9 to update the server
+ * Choose any available port and configure it in application.properties (server.port=8082)
  */
 @RestController
 public class UserController {
 
-    @Autowired //Create an instance of UserDaoService
-    private UserDaoService service; //bean
+    @Autowired //Create an instance of UserDaoService. Instead of UserDaoService service = new UserDaoService;
+    private UserDaoService service; //bean (instance)
 
     @GetMapping(path = "/users") //to get all users
     public List<User> retrieveAllUsers() {
