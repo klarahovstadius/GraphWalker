@@ -38,7 +38,7 @@ public class UserController {
     @GetMapping(path = "/user/valid/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public String getOneValidUsers(@PathVariable int id) {
         Session session = driver.session();
-        List<Object> results = session.run("match (n:user {type:\"valid\"}) return n").list(r -> r.get("n").asNode().get("name").asString());
+        List<String> results = session.run("match (n:user {type:\"valid\"}) return n").list(r -> r.get("n").asNode().get("name").asString());
         return userService.userValidation(id, results);
     }
 
@@ -52,7 +52,7 @@ public class UserController {
     @GetMapping(path = "/user/admin/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public String getOneAdminUsers(@PathVariable int id) {
         Session session = driver.session();
-        List<Object> results = session.run("match (n:user)-[i:access_right]->(m:role {name:\"Admin role\"}) return n")
+        List<String> results = session.run("match (n:user)-[i:access_right]->(m:role {name:\"Admin role\"}) return n")
                 .list(r -> r.get("n").asNode().get("name").asString());
         return userService.userValidation(id, results);
     }
@@ -67,7 +67,7 @@ public class UserController {
     @GetMapping(path = "/user/spira/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public String getOneSpiraEditor(@PathVariable int id) {
         Session session = driver.session();
-        List<Object> results = session.run("match (n:user)-[i:access_right]->(m:role {name:\"Admin role\"})-[r:edit]->(o:connection) return n,i,m,r,o")
+        List<String> results = session.run("match (n:user)-[i:access_right]->(m:role {name:\"Admin role\"})-[r:edit]->(o:connection) return n,i,m,r,o")
                 .list(r -> r.get("n").asNode().get("name").asString());
         return userService.userValidation(id, results);
         //return results.get(id).toString();
