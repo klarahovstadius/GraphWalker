@@ -1,4 +1,4 @@
-package springcourse.examplewithcomments;
+package springcourse.examplewithcomments.user;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

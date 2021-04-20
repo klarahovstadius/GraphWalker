@@ -1,4 +1,4 @@
-package springcourse.examplewithcomments;
+package springcourse.examplewithcomments.user;
 
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package springcourse;
+package neo4jwithspring;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,7 +24,7 @@ public class SwaggerConfig {
      * The stuff before the bean is some nice info to show in the api documentation
      */
     public static final Contact DEFAULT_CONTACT = new Contact(
-            "Klara", "http://www.klara.com", "klarahovstadius@gmail.com");
+            "Klara", "http://www.klara.com", "hovstadiusklara@gmail.com");
 
     public static final ApiInfo DEFAULT_API_INFO = new ApiInfo(
             "My API Title", "My API Description", "1.0",

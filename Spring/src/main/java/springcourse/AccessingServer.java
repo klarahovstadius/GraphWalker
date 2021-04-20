@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @SpringBootApplication automatically scans the package & its subpackages for beans
- * It will run my HelloWorldController class
+ * It will run the controller classes
  * Ctrl+F9 to update the server without restarting it
  */
 
