@@ -70,7 +70,6 @@ public class UserController {
         List<String> results = session.run("match (n:user)-[i:access_right]->(m:role {name:\"Admin role\"})-[r:edit]->(o:connection) return n,i,m,r,o")
                 .list(r -> r.get("n").asNode().get("name").asString());
         return userService.userValidation(id, results);
-        //return results.get(id).toString();
     }
 
 }
