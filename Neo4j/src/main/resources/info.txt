@@ -1,0 +1,6 @@
+--NEO4J--
+(0. Start desktop database)
+1. "runNeo4j" (my bat file) in command line to start the browser service
+2. Start application class
+3. Go to http://localhost:7474/browser/ and login to bolt localhost:11005
+4. Go to localhost:8083. There the queries will show (it queries to the database)
