@@ -1,23 +1,24 @@
 package neo4jwithspring.controllers;
 
-import org.neo4j.driver.Driver;
-import org.neo4j.driver.Session;
+import neo4jwithspring.repositories.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 public class RoleController {
-
+    /**
+     * Here is another option using Neo4j + Spring boot which I like more
+     */
     @Autowired
-    Driver driver;
+    RoleRepository roleRepository;
 
     @GetMapping(path = "/role", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<String> getAllRoles() {
-        Session session = driver.session();
-        return session.run("MATCH (n:role) RETURN n").list(r -> r.get("n").asNode().get("name").asString());
+    public List<Map<String, Object>> getAllRoles() {
+        return roleRepository.findAllRoles();
     }
 }
