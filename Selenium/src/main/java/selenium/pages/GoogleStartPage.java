@@ -6,7 +6,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 /**
- * A page
+ * Page that extends the base class
  */
 public class GoogleStartPage extends BasePageObject {
 

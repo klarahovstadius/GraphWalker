@@ -6,6 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+/**
+ * Extends the base class
+ */
 public class GoogleResultPage extends BasePageObject {
 
     private final By resultCount = By.id("result-stats");

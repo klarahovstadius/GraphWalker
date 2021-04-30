@@ -1,75 +1,42 @@
 package neo4jwithspring.controllers;
 
-import neo4jwithspring.exceptions.UserNotFoundException;
-import neo4jwithspring.services.UserService;
-import org.neo4j.driver.Driver;
-import org.neo4j.driver.Session;
+import neo4jwithspring.entities.User;
+import neo4jwithspring.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
-/**
- * Inspiration from https://neo4j.com/developer/java-driver-spring-boot-starter/
- */
 @RestController
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
-    Driver driver;
-    @Autowired
-    UserService userService;
+    UserRepository userRepository;
 
-    @GetMapping(path = "/user", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<String> getAllUsers() {
-        Session session = driver.session();
-        return session.run("MATCH (n:user) RETURN n").list(r -> r.get("n").asNode().get("name").asString());
+    @GetMapping()
+    public List<Map<String, Object>> getAllUsers() {
+        return userRepository.findAll();
     }
 
-    @GetMapping(path = "/user/valid", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<String> getAllValidUsers() {
-        Session session = driver.session();
-        return session.run("match (n:user {type:\"valid\"}) return n").list(r -> r.get("n").asNode().get("name").asString());
+    @GetMapping("/{id}")
+    public Object getOneUser(@PathVariable int id) {
+        return userRepository.findOne(id);
     }
 
-    @GetMapping(path = "/user/valid/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public String getOneValidUsers(@PathVariable int id) {
-        Session session = driver.session();
-        List<String> results = session.run("match (n:user {type:\"valid\"}) return n").list(r -> r.get("n").asNode().get("name").asString());
-        return userService.userValidation(id, results);
+    @GetMapping("/type/{type}")
+    public List<Map<String, Object>> findByType(@PathVariable String type) throws Exception {
+        return userRepository.findByType(type);
     }
 
-    @GetMapping(path = "/user/admin", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<String> getAllAdminUsers() {
-        Session session = driver.session();
-        return session.run("match (n:user {type:\"valid\"})-[i:access_right]->(m:role {name:\"Admin role\"}) return n")
-                .list(r -> r.get("n").asNode().get("name").asString());
+    @PostMapping()
+    public String createUser(@RequestBody User user) {
+        return userRepository.createUser(user);
     }
 
-    @GetMapping(path = "/user/admin/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public String getOneAdminUsers(@PathVariable int id) {
-        Session session = driver.session();
-        List<String> results = session.run("match (n:user)-[i:access_right]->(m:role {name:\"Admin role\"}) return n")
-                .list(r -> r.get("n").asNode().get("name").asString());
-        return userService.userValidation(id, results);
+    @PostMapping("/{id}")
+    public String updateUser(@PathVariable int id, @RequestBody User user) {
+        return userRepository.updateById(id, user);
     }
-
-    @GetMapping(path = "/user/spira", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<String> getAllSpiraEditors() {
-        Session session = driver.session();
-        return session.run("match (n:user)-[i:access_right]->(m:role {name:\"Admin role\"})-[r:edit]->(o:connection) return n,i,m,r,o")
-                .list(r -> r.get("n").asNode().get("name").asString());
-    }
-
-    @GetMapping(path = "/user/spira/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public String getOneSpiraEditor(@PathVariable int id) {
-        Session session = driver.session();
-        List<String> results = session.run("match (n:user)-[i:access_right]->(m:role {name:\"Admin role\"})-[r:edit]->(o:connection) return n,i,m,r,o")
-                .list(r -> r.get("n").asNode().get("name").asString());
-        return userService.userValidation(id, results);
-    }
-
 }
