@@ -14,6 +14,7 @@
         <module>Spring</module>
         <module>Neo4j</module>
         <module>Experimentation</module>
+        <module>MachineLearning</module>
     </modules>
 
 
