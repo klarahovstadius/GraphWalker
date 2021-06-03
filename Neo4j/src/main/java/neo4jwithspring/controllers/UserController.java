@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 2. Mapping to specific endpoints
+ */
 @RestController
 @RequestMapping("/user")
 public class UserController {

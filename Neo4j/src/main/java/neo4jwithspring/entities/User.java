@@ -4,6 +4,9 @@ import org.springframework.data.neo4j.core.schema.GeneratedValue;
 import org.springframework.data.neo4j.core.schema.Id;
 import org.springframework.data.neo4j.core.schema.Node;
 
+/**
+ * 1. User structure, what the user can contain
+ */
 @Node("User")
 public class User {
 

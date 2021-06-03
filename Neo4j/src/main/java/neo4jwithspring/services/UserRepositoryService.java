@@ -11,6 +11,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 4. Methods
+ */
 @Profile({"neo4j", "default"})
 @Service
 public class UserRepositoryService implements UserRepository {

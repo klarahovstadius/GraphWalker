@@ -6,6 +6,9 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 3. UserRepositoryService implements this repository, so it will be directed there
+ */
 @Repository
 public interface UserRepository{
 
