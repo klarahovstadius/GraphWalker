@@ -1,5 +1,8 @@
 import org.testng.annotations.Test;
 
+
+import java.time.LocalDate;
+
 public class Tests {
 
     ForFun forFun = new ForFun();
@@ -28,11 +31,51 @@ public class Tests {
     /**
      * Write a Java program to check if a given number is prime or not.
      * Remember, a prime number is a number which is not divisible by any other number, e.g. 3, 5, 7, 11, 13, 17, etc.
-     *
      */
     @Test
-    public void prime(){
+    public void prime() {
         prime = 7919;
         forFun.primeCheck(prime);
     }
+
+    @Test
+    public void firstTest() {
+        String s1 = "Hej";
+        int x = 20;
+
+        for (int i = 0; i < 3; i++) {
+            String y = Integer.toString(x);
+            int length = y.length();
+            int lengthString = s1.length();
+            int minLength = 3;
+            int minLengthString = 15;
+
+            while (length < minLength) {
+                y = "0" + y;
+                length = y.length();
+            }
+            while (lengthString < minLengthString) {
+                s1 = s1 + " ";
+                lengthString = s1.length();
+            }
+            System.out.println(s1 + y);
+        }
+        System.out.println("================================");
+    }
+
+    @Test
+    public void secondTest(){
+
+    }
+
+
+    @Test
+    public void findDay() {
+        int year = 2021;
+        int month = 5;
+        int day = 7;
+        LocalDate date = LocalDate.of(year, month, day);
+        System.out.println(date.getDayOfWeek().toString());
+    }
+
 }

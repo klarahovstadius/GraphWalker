@@ -4,3 +4,7 @@
 2. Start application class
 3. Go to http://localhost:7474/browser/ and login to bolt localhost:11005
 4. Go to localhost:8083. There the queries will show (it queries to the database)
+
+UPDATED STEPS
+1. Start database via desktop
+2. Go to http://localhost:7474/
