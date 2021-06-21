@@ -1,9 +1,10 @@
-package selenium.pages;
+package selenium.pages.google;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import selenium.pages.BasePageObject;
 
 /**
  * Page that extends the base class

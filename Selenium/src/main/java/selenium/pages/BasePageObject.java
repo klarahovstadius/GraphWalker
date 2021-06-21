@@ -39,12 +39,43 @@ public class BasePageObject {
         driver.findElement(locator);
         log.info("Found the element from locator " + locator);
     }
+
     public WebElement findElementReturnElement(By locator) {
         WebDriverWait wait = new WebDriverWait(driver, 3);
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         WebElement element = driver.findElement(locator);
         log.info("Found the element from locator " + locator);
         return element;
+    }
+
+    /**
+     * Wait
+     */
+    protected boolean isClickable(By locator, int timeOutSeconds) {
+        boolean result;
+        try {
+            log.info("Checking for {} seconds if element is clickable. Element: {}", timeOutSeconds, locator);
+            WebDriverWait waitForLocator = new WebDriverWait(driver, timeOutSeconds);
+            waitForLocator.until(ExpectedConditions.elementToBeClickable(locator));
+            result = driver.findElement(locator).isDisplayed();
+        } catch (org.openqa.selenium.NoSuchElementException e) {
+            log.error("Exception while checking if the element is clickable: {}", (Object) e.getStackTrace());
+            result = false;
+        }
+        return result;
+    }
+
+    protected boolean isDisplayed(By locator) {
+        boolean result = false;
+        try {
+            log.info("Checking if displayed: {}", locator);
+            WebDriverWait waitForLocator = new WebDriverWait(driver, 5);
+            waitForLocator.until(ExpectedConditions.visibilityOfElementLocated(locator));
+            result = true;
+        } catch (org.openqa.selenium.NoSuchElementException e) {
+            log.error("Exception waiting for a locator to be visible: {}", (Object) e.getStackTrace());
+        }
+        return result;
     }
 
     /**
@@ -55,6 +86,7 @@ public class BasePageObject {
         log.info("Found the element from locator " + locator);
         log.info("Keys sent to locator " + locator);
     }
+
     public void sendKeys(By locator, Keys keys) {
         driver.findElement(locator).sendKeys(keys);
         log.info("Found the element from locator " + locator);
@@ -65,9 +97,9 @@ public class BasePageObject {
      * Click on element
      */
     public void clickElement(By locator) {
-        WebDriverWait waitForLocator = new WebDriverWait(driver, 5);
-        waitForLocator.until(ExpectedConditions.elementToBeClickable(locator));
+        isClickable(locator,5);
         driver.findElement(locator).click();
+        log.info("Clicked on locator {} ",locator);
     }
 
     /**
