@@ -26,15 +26,15 @@ public class BrowserFactory {
     public WebDriver createDriver() {
         log.info("Creating driver " + browser);
 
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("start-maximized");
-        FirefoxOptions options2 = new FirefoxOptions();
-        options2.addArguments("start-maximized");
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("start-maximized");
+        FirefoxOptions firefoxOptions = new FirefoxOptions();
+        firefoxOptions.addArguments("start-maximized");
 
         switch (browser) {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
-                driver.set(new ChromeDriver(options));
+                driver.set(new ChromeDriver(chromeOptions));
                 log.info("Chrome driver created");
                 break;
             case "firefox":
@@ -45,7 +45,7 @@ public class BrowserFactory {
             default:
                 log.info("Do not know how to start " + browser + ". Chrome driver created");
                 WebDriverManager.chromedriver().setup();
-                driver.set(new ChromeDriver(options));
+                driver.set(new ChromeDriver(chromeOptions));
                 break;
         }
         return driver.get();

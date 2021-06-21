@@ -1,3 +1,4 @@
+<!--Can run this xml file to run the test "googleSearchTest", first via Chrome and then via Firefox-->
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Selenium" verbose="1" parallel="tests" thread-count="1">
